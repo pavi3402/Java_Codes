@@ -1,0 +1,48 @@
+// Box.java
+class Box {
+    private double height;  // Encapsulation of properties
+    private double depth;
+    private double breadth;
+
+    // Constructor to initialize the dimensions of the box
+    public Box(double height, double depth, double breadth) {
+        this.height = height;
+        this.depth = depth;
+        this.breadth = breadth;
+    }
+
+    // Getters for each dimension
+    public double getHeight() {
+        return height;
+    }
+
+    public double getDepth() {
+        return depth;
+    }
+
+    public double getBreadth() {
+        return breadth;
+    }
+
+    // Method to display the dimensions
+    public void displayDimensions() {
+        System.out.println("Height: " + height);
+        System.out.println("Depth: " + depth);
+        System.out.println("Breadth: " + breadth);
+    }
+}
+
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        // Create a Box object with given dimensions
+        Box myBox = new Box(10.5, 20.3, 15.8);
+
+        // Display the dimensions using a method
+        myBox.displayDimensions();
+
+        // Accessing individual dimensions using getters
+        System.out.println("Accessing via getters:");
+        System.out.println("Height: " + myBox.getHeight());
+        System.out.println("Depth: " + myBox.getDepth());
+        Syst
